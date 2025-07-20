@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<!--
+  Media Stories (DY_MediaStories integrated into Editorial site layout)
+  Save as media.html (replaces DY_MediaStories.html).
+  Uses global wrapper/header/sidebar from index.html.
+  Preserves original photo-story grid layout. fileciteturn1file0
+-->
+<html>
+  <head>
+    <title>Media Stories | Humane Society of the U.S.</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      /* --- Page-specific overrides ---------------------------------------- */
+      .media-stories-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .media-stories-wrapper .intro-copy {
+        max-width: 700px;
+        margin: 0 auto 2.5rem auto;
+        text-align: center;
+      }
+      /* Responsive grid inspired by original DY_MediaStories layout. fileciteturn1file0 */
+      .story-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+      .photo-story {
+        background: #ffffff;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      .photo-story img {
+        width: 100%;
+        height: 200px; /* Uniform height; crops via object-fit */
+        object-fit: cover; /* Preserve aspect crop. fileciteturn1file0 */
+        display: block;
+      }
+      .story-text {
+        padding: 1.25rem 1.5rem 1.75rem 1.5rem;
+        flex: 1 1 auto;
+      }
+      .story-text h3 {
+        margin: 0 0 0.75rem 0;
+        font-size: 1.25em;
+      }
+      .story-text p {
+        margin: 0;
+        font-size: 0.95em;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+
+          <!-- Header -->
+          <header id="header">
+            <a href="index.html" class="logo"><strong>Humane Society of the U.S.</strong> an overview of the organization from UTK's Group 4</a>
+            <ul class="icons">
+              <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+              <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+              <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+              <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+              <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+            </ul>
+          </header>
+
+          <!-- Banner / Page Intro -->
+          <section id="banner">
+            <div class="content">
+              <header>
+                <h1>Media &amp; Rescue Stories</h1>
+              </header>
+              <p>Highlights from recent rescues, adoptions, and heartwarming moments shared with us by supporters across the country.</p>
+            </div>
+            <span class="image object">
+              <img src="images/Logo.jpg" alt="HSUS Logo" />
+            </span>
+          </section>
+
+          <!-- Stories Grid -->
+          <section id="media-stories" class="media-stories-wrapper">
+            <header class="major"><h2>Furry Friends Rescued</h2></header>
+            <p class="intro-copy">Real photos. Real happy endings. Scroll through a few of our community's recent success stories—and feel free to share yours!</p>
+
+            <div class="story-grid">
+              <!-- Duck -->
+              <article class="photo-story">
+                <img src="https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg" alt="Duck, a rescued dog" />
+                <div class="story-text">
+                  <h3>Duck</h3>
+                  <p>Duck came to us early March and found the most loving family. He spends most of his time in the sun or cuddled up with his favorite blanket.</p>
+                </div>
+              </article>
+
+              <!-- Princess Donut -->
+              <article class="photo-story">
+                <img src="https://images.pexels.com/photos/674570/pexels-photo-674570.jpeg" alt="Princess Donut, a rescued cat" />
+                <div class="story-text">
+                  <h3>Princess Donut</h3>
+                  <p>Rescued from the streets, Princess finds herself perched in her favorite spot in her new home.</p>
+                </div>
+              </article>
+
+              <!-- Kitty Perry -->
+              <article class="photo-story">
+                <img src="https://images.pexels.com/photos/1472999/pexels-photo-1472999.jpeg" alt="Kitty Perry, adopted kitten" />
+                <div class="story-text">
+                  <h3>Kitty Perry</h3>
+                  <p>It was easy for little Kitty Perry to find a loving home—instant superstar status!</p>
+                </div>
+              </article>
+
+              <!-- Pork Chop -->
+              <article class="photo-story">
+                <img src="https://images.pexels.com/photos/422220/pexels-photo-422220.jpeg" alt="Pork Chop, happy rescue dog" />
+                <div class="story-text">
+                  <h3>Pork Chop</h3>
+                  <p>Our king Pork Chop spends his time running around in his new backyard.</p>
+                </div>
+              </article>
+
+              <!-- Biscuit -->
+              <article class="photo-story">
+                <img src="https://images.pexels.com/photos/121920/pexels-photo-121920.jpeg" alt="Biscuit, newly adopted" />
+                <div class="story-text">
+                  <h3>Biscuit</h3>
+                  <p>Biscuit is settling into his new home and already soaking up the love.</p>
+                </div>
+              </article>
+            </div><!-- /.story-grid -->
+          </section>
+
+        </div><!-- /.inner -->
+      </div><!-- /#main -->
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+
+          <!-- Search -->
+          <section id="search" class="alt">
+            <form method="post" action="#">
+              <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+          </section>
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major"><h2>Menu</h2></header>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="mission.html">Mission</a></li>
+              <li><a href="issues.html">Issues</a></li>
+              <li><a href="leadership.html">Leadership</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="take-action.html">Take Action</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="media.html" class="active">Media</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">&copy; HSUS. Design: HTML5 UP.</p>
+          </footer>
+
+        </div>
+      </div>
+
+    </div><!-- /#wrapper -->
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
